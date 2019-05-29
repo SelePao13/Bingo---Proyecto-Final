@@ -1,3 +1,6 @@
+nombre = input("Ingrese su nombre: ")
+cartillas = int(input("Digite numero de cartillas: "))
+
 def pedirNumeroEntero():
 
 	correcto=False
@@ -37,5 +40,9 @@ while not salir:
 		print ("Introduce un opcion 1 y 3")
 
 
+
 print ("Fin")
-	
+	1|
+import random
+for x in range(1): 
+    print (random.randint(1,80))
