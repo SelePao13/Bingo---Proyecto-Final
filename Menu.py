@@ -1,3 +1,4 @@
+jugadores = int(input("Digite numero de jugadores: "))
 nombre = input("Ingrese su nombre: ")
 cartillas = int(input("Digite numero de cartillas: "))
 
@@ -29,7 +30,9 @@ while not salir:
 	opcion = pedirNumeroEntero()
 
 	if opcion == 1:
-		print ("Jugar")
+		import random
+		for x in range(1):
+			print("Su bolilla es", random.randint(1,80))
 	elif opcion == 2:
 		print ("Resultado")
 	elif opcion == 3:
@@ -39,9 +42,4 @@ while not salir:
 	else:
 		print ("Introduce un opcion 1 y 3")
 
-
-
 print ("Fin")
-import random
-for x in range(1): 
-    print (random.randint(1,80))
