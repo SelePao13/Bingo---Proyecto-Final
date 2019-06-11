@@ -38,8 +38,13 @@ while not salir:
 	elif opcion == 3:
 		print("Reiniciar juego")
 	elif opcion == 4:
+		if cartillas <= 3:
+			a = cartillas * 5 
+			pozo_total = a * jugadores
+			print("El pozo total es:",pozo_total)
 		salir = True
 	else:
 		print ("Introduce un opcion 1 y 3")
 
-print ("Fin")
+print ("Fin del juego")
+
