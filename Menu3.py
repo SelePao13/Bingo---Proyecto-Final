@@ -1,4 +1,4 @@
-jugadores = int(input("Digite numero de jugadores: s"))
+jugadores = int(input("Digite numero de jugadores: "))
 for nombre in range (1,jugadores+1):
     nombre = input("Ingrese su nombre: ")
     cartillas = int(input("Ingrese su numero de cartilla: "))

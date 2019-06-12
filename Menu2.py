@@ -1,6 +1,37 @@
+#Juego BINGO
+Nombre_de_Jugador=[]
+Cartillas=[]
+print("""
+     ________    _______________
+    |   ___  \\  /              /
+    |  |   \\  |/              /\\
+    |  |   |  |__  ___     __/ _\\____   ______
+    |  |__/  /|  |/   \\   |  |/  ____\\ /  __  \\
+    |   __  < |  |     \\  |  |  |     |  |  |  |
+    |  |  \\  \\|  |  |\\  \\ |  |  |  ___|  |  |  |
+    |  |   |  |  |  | \\  \\|  |  | /_  |  |  |  |
+    |  |___/  |  |  |  \\     |  |__/  |  |__|  |
+    |________/|__|\\_|  /\\___/ \\______/\\\\______/
+      /               /\\               \\
+     /______JUEGO_____/DE\\____NUMEROS____\\
+""")
+
 jugadores = int(input("Digite numero de jugadores: "))
-nombre = input("Ingrese su nombre: ")
-cartillas = int(input("Digite numero de cartillas: "))
+while True:
+        a = input("Nombre de jugador:")
+        Nombre_de_Jugador.append(a)
+        while True:
+            b = int(input("Numero de cartillas:"))
+            if b <= 3:
+                Cartillas.append(b)
+                break
+        if len(Nombre_de_Jugador) == jugadores:
+            break
+suma = 0 
+for x in Cartillas:
+    suma = suma + x
+
+Pozo_Total = suma*5
 
 def pedirNumeroEntero():
 
@@ -54,6 +85,7 @@ while not salir:
 	elif opcion == 3:
 		print("Reiniciar juego")
 	elif opcion == 4:
+		print("El pozo total es: S/",Pozo_Total)
 		salir = True
 	else:
 		print ("Introduce un opcion 1 y 3")
