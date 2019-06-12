@@ -43,6 +43,7 @@ while not salir:
 			pozo_total = a * jugadores
 			print("El pozo total es:",pozo_total)
 		salir = True
+		break
 	else:
 		print ("Introduce un opcion 1 y 3")
 
