@@ -17,7 +17,7 @@ def pedirNumeroEntero():
 
 salir = False
 opcion = 0
-
+cad=""
 while not salir:
 
 	print ("1. Jugar")
@@ -28,11 +28,15 @@ while not salir:
 	print ("Elige una opcion")
 
 	opcion = pedirNumeroEntero()
+	
 
 	if opcion == 1:
 		import random
 		for x in range(1):
-			print("Su bolilla es", random.randint(1,80))
+			a=random.randint(1,80)
+			print("Su bolilla es", a)
+			cad = cad + " " + str(a)
+			
 	elif opcion == 2:
 		import random  
 		bolillas=[random.randint(1, 80)]
@@ -45,7 +49,8 @@ while not salir:
 			else:
 				bolillas.append(x)
 				i+=1
-				print("Las bolillas son:",bolillas)
+				print("Las bolillas son:",cad)
+				break
 	elif opcion == 3:
 		print("Reiniciar juego")
 	elif opcion == 4:
