@@ -84,7 +84,7 @@ while True:
 					print("Las bolillas son:",cad)
 					break
 		elif opcion == 3:
-			break
+			break 
 			
 		elif opcion == 4:
 			print("El pozo total es: S/",Pozo_Total)
