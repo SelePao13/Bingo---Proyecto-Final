@@ -85,12 +85,14 @@ while True:
 					break
 		elif opcion == 3:
 			break 
-			
 		elif opcion == 4:
 			print("El pozo total es: S/",Pozo_Total)
-			salir = True
+			print ("Fin del juego")
+			import sys
+			sys.exit()
+			break
+		
 		else:
 			print ("Introduce un opcion 1 y 3")
 
-	print ("Fin del juego")
 	
