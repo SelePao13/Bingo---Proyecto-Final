@@ -18,6 +18,9 @@ while True:
 	""")
 
 	jugadores = int(input("Digite numero de jugadores: "))
+	if 0 >= jugadores:
+		print("ERROR") 
+		break
 	while True:
 			a = input("Nombre de jugador:")
 			Nombre_de_Jugador.append(a)
